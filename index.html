@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Wireframe to HTML/CSS</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Trispace&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-forecast">
+        <h1>Weather in Ukraine</h1>
+
+        <div class="cities">
+          <button class="city">Kyiv</button>
+          <button class="city">Odesa</button>
+          <button class="city">Lviv</button>
+          <button class="city">Kharkiv</button>
+          <button class="city">Dnipro</button>
+          <button class="city">Vinnytsia</button>
+        </div>
+
+        <form class="search-form" id="search-form">
+          <input
+            id="search-city"
+            class="search-city"
+            type="search"
+            placeholder="Enter a city"
+          />
+          <input class="search-button" type="submit" value="Search" />
+          <button class="locate-me" id="location-button">Locate me</button>
+        </form>
+
+        <div class="row forecast">
+          <div class="col-2 forecast-current">
+            <div id="forecast-city" class="col forecast-city"></div>
+            <div class="col forecast-date" id="forecast-date"></div>
+            <div
+              class="col forecast-description"
+              id="forecast-description"
+            ></div>
+          </div>
+          <div class="col-3 temperature-now">
+            <span class="temperature" id="temperature"></span
+            ><span class="units">
+              <a href="#" id="celsius-link">°C</a> |
+              <a href="#" id="fahrenheit-link">°F</a>
+            </span>
+          </div>
+          <div class="col-2 forecast-details">
+            <div class="col humidity">
+              Humidity: <span id="humidity"></span>%
+            </div>
+            <div class="col wind">Wind: <span id="wind"></span> km/h</div>
+          </div>
+        </div>
+
+        <div class="forecast-future">
+          <div class="row forecast-days">
+            <div class="col forecast-day">Mon</div>
+            <div class="col forecast-day">Tue</div>
+            <div class="col forecast-day">Wed</div>
+            <div class="col forecast-day">Thu</div>
+            <div class="col forecast-day">Fri</div>
+            <div class="col forecast-day">Sat</div>
+            <div class="col forecast-day">Sun</div>
+            <div class="col-5"></div>
+          </div>
+          <div class="row forecast-image">
+            <div class="col forecast-image">🌤</div>
+            <div class="col forecast-image">☁</div>
+            <div class="col forecast-image">🌤</div>
+            <div class="col forecast-image">🌤</div>
+            <div class="col forecast-image">🌤</div>
+            <div class="col forecast-image">🌤</div>
+            <div class="col forecast-image">🌤</div>
+            <div class="col-5"></div>
+          </div>
+
+          <div class="row temperatures-future">
+            <div class="col temperature-future">18° 10°</div>
+            <div class="col temperature-future">17° 8°</div>
+            <div class="col temperature-future">16° 3°</div>
+            <div class="col temperature-future">13° 7°</div>
+            <div class="col temperature-future">17° 10°</div>
+            <div class="col temperature-future">15° 6°</div>
+            <div class="col temperature-future">13°9°</div>
+            <div class="col-5"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>

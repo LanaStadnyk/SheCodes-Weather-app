@@ -1,0 +1,81 @@
+body {
+  font-family: "Trispace", sans-serif;
+}
+.weather-forecast {
+  display: block;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 20px;
+  margin: 20px 200px;
+}
+
+.city {
+  border: none;
+  border-radius: 5px;
+  background: #8ed6ff6b;
+  padding: 5px 10px;
+}
+
+.city:hover {
+  background: white;
+  border: 2px solid #8ed6ff6b;
+}
+
+.search-form {
+  margin: 30px 0;
+}
+
+.search-city {
+  border: 9px solid #ffe3b0;
+}
+
+.search-button {
+  border: none;
+  margin: 0 -10px;
+  padding: 10px 10px;
+  background: #ffe3b0;
+}
+
+.search-button:hover {
+  background: white;
+  border: 2px solid #ffe3b0;
+}
+.locate-me {
+  margin-left: 80px;
+  background: #9bf4d5;
+  border: none;
+  padding: 10px;
+}
+
+.locate-me:hover {
+  background: white;
+  border: 2px solid #9bf4d5;
+}
+
+.forecast-current {
+  font-size: 15px;
+  padding-right: 0;
+}
+
+.forecast-city {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.forecast-description {
+  text-transform: capitalize;
+}
+.temperature {
+  font-size: 70px;
+}
+
+.forecast-details {
+  font-size: 12px;
+  margin-left: -90px;
+}
+
+.forecast-future {
+  margin-top: 30px;
+  margin-left: -30px;
+}
